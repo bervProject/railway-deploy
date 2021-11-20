@@ -21,7 +21,7 @@ Success/Failure result
 ```yaml
 uses: bervProject/railway-deploy@main
 with:
-  railway_token: ${ secret.RAILWAY_TOKEN }
+  railway_token: ${{ secret.RAILWAY_TOKEN }}
 ```
 
 ### Using env
@@ -29,5 +29,5 @@ with:
 ```yaml
 uses: bervProject/railway-deploy@main
 env:
-  RAILWAY_TOKEN: ${ secret.RAILWAY_TOKEN }
+  RAILWAY_TOKEN: ${{ secret.RAILWAY_TOKEN }}
 ```
