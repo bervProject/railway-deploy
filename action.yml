@@ -1,15 +1,14 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Railway Deploy'
+description: 'Simple Action to Deploy Railway App using Railway CLI'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
+  railway_token:  # id of input
+    description: 'Railway Token for Deployment'
+    required: false
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  status: # id of output
+    description: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.railway_token }}

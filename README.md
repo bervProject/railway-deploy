@@ -1,23 +1,33 @@
-# Hello world docker action
+# Railway Deploy Github Action
 
-This action prints "Hello World" to the log or "Hello" + the name of a person to greet. To learn how this action was built, see "[Creating a Docker container action](https://help.github.com/en/articles/creating-a-docker-container-action)" in the GitHub Help documentation.
+This action deploys your app to Railway using Railway CLI.
 
 ## Inputs
 
-### `who-to-greet`
+### `railway_token`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Optional** Railway Token to deploy the app.
 
 ## Outputs
 
-### `time`
+### `status`
 
-The time we greeted you.
+Success/Failure result
 
 ## Example usage
 
+### Using with
+
 ```yaml
-uses: actions/hello-world-docker-action@master
+uses: bervProject/railway-deploy@main
 with:
-  who-to-greet: 'Mona the Octocat'
+  railway_token: ${ secret.RAILWAY_TOKEN }
+```
+
+### Using env
+
+```yaml
+uses: bervProject/railway-deploy@main
+env:
+  RAILWAY_TOKEN: ${ secret.RAILWAY_TOKEN }
 ```
