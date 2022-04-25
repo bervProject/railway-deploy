@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM node:17-alpine
+FROM node:18-alpine
 
 # Install Railway CLI
 RUN npm i -g @railway/cli@1.4.0
