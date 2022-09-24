@@ -1,3 +1,7 @@
+# 0.0.7
+
+* Update @railway/cli from 1.7.5 to 2.0.12
+
 # 0.0.6
 
 * Update @railway/cli from 1.7.3 to 1.7.5
