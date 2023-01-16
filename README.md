@@ -4,9 +4,10 @@ This action deploys your app to Railway using Railway CLI.
 
 ## Inputs
 
-### `railway_token`
-
-**Optional** Railway Token to deploy the app.
+| Name            | Required | Description                                          |
+|:---------------:|:--------:|:----------------------------------------------------:|
+| `service`       | `true`   | Specify the service to use. Introduced from `0.1.0`. |
+| `railway_token` | `false`  | Railway Token to deploy the app.                     |
 
 ## Outputs
 
@@ -22,6 +23,7 @@ Success/Failure result
 uses: bervProject/railway-deploy@main
 with:
   railway_token: ${{ secrets.RAILWAY_TOKEN }}
+  service: "my-service"
 ```
 
 ### Using env
@@ -30,4 +32,6 @@ with:
 uses: bervProject/railway-deploy@main
 env:
   RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+with:
+  service: "my-service"
 ```
