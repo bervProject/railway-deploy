@@ -16,7 +16,7 @@ jobs:
   # Run tests.
   # See also https://docs.docker.com/docker-hub/builds/automated-testing/
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v3
@@ -32,7 +32,7 @@ jobs:
   # See also https://docs.docker.com/docker-hub/builds/
   docker-push:
     # Ensure test job passes before pushing image.
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v3
