@@ -5,9 +5,9 @@ if [ $2 ] ; then
   export RAILWAY_TOKEN=$2
 fi
 
-railway up --service $1 || error_code=$?
+railway up --detach --service $1 || error_code=$?
 if [ "${error_code}" -ne 0 ]; then
-  exit $error_code
+    exit $error_code
 else
-  echo "::set-output name=status::Success"
+    echo "status=Success" >> $GITHUB_OUTPUT
 fi
