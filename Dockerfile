@@ -2,7 +2,7 @@
 FROM node:19-alpine
 
 # Install Railway CLI
-RUN npm i -g @railway/cli@2.1.0
+RUN npm i -g @railway/cli@3.0.13
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
