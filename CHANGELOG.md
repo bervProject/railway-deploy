@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.1
+
+* Update @railway/cli from 2.1.0 to 3.0.13
+
 ## 0.1.0
 
 ### Breaking Changes
