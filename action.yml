@@ -7,6 +7,9 @@ inputs:
   service: # the specific service target
     description: 'The specific service target'
     required: true
+  detach: # detatch option
+    description: 'Detach option in the railway cli option'
+    required: false
 outputs:
   status: # status output
     description: ''
@@ -16,3 +19,4 @@ runs:
   args:
     - ${{ inputs.service }}
     - ${{ inputs.railway_token }}
+    - ${{ inputs.detach }}

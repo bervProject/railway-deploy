@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.1.2
+
+* Update the Dockerfile to install @railway/cli with their bash install script.
+* Update Github action output
+* Update @railway/cli from 3.0.13 to 3.0.19
+* Add optional inputs for the detach mode of the railway/cli
+
 ## 0.1.1
 
 * Update @railway/cli from 2.1.0 to 3.0.13
