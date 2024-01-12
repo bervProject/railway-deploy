@@ -46,3 +46,10 @@ with:
   service: "my-service"
   detach: true
 ```
+
+## Notes for Raising Bugs/Issues
+
+1. Please create an issue or discussion with general or detailed questions/issues (never expose confidential things).
+2. If you want to share some private/confidential logs, you may send those to my email. Please mention the link to the issue or discussion.
+
+I'm sorry that I prefer to log the issue in the repository because I may lose track if you email the issue directly to my email. I appreciate your cooperation.
