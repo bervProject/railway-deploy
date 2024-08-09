@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.3
+
+* Update @railway/cli from 3.0.19 to 3.11.4
+
 ## 0.1.2
 
 * Update the Dockerfile to install @railway/cli with their bash install script.
