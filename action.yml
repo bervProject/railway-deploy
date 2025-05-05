@@ -1,9 +1,6 @@
 name: 'Railway Deploy'
 description: 'Simple Action to Deploy Railway App using Railway CLI'
 inputs:
-  railway_token:  # railway token
-    description: 'Railway Token for Deployment'
-    required: false
   service: # the specific service target
     description: 'The specific service target'
     required: true
@@ -18,5 +15,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.service }}
-    - ${{ inputs.railway_token }}
     - ${{ inputs.detach }}
