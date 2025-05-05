@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.2.0
+
+* Remove `railway-token` input.
+
 ## 0.1.3
 
 * Update @railway/cli from 3.0.19 to 3.11.4

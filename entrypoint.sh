@@ -1,12 +1,7 @@
 #!/bin/sh -l
 
-if [ $2 ] ; then
-  # token provided use with
-  export RAILWAY_TOKEN=$2
-fi
-
 detach=""
-if [ $3 ] ; then
+if [ $2 ] ; then
   detach="--detach"
 fi
 
