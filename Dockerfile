@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM node:25-alpine
+FROM node:26-alpine
 
 # Install Railway CLI with their install script
 RUN apk add curl && apk add tar
